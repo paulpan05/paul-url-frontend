@@ -1,5 +1,7 @@
 # Paul URL Front-end
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5bb46816-eb8a-4022-9af0-aa23d563fe67/deploy-status)](https://app.netlify.com/sites/epic-blackwell-a9482c/deploys)
+
 React application that shortens personal urls URL's. Can be redirected to the url by visiting https://paulurl.com/{route_name}
 
 ## Implementation
