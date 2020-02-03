@@ -19,9 +19,9 @@ const UrlRedirect: React.FC = () => {
   }
 
   if (!redirectResponse) {
-    return <h1>Please wait...</h1>
+    return <h1 className="status">Please wait...</h1>
   } else if (redirectResponse?.id === -1) {
-    return <h1>404: Page not found</h1>
+    return <h1 className="status">Error: Route Not Found</h1>
   } else {
     window.location.href = redirectResponse?.originalUrl;
     return null;
