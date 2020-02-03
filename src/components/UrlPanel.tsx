@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/UrlPanel.css';
 
 type UrlPanelProps = {
   route: string
@@ -8,10 +9,12 @@ type UrlPanelProps = {
 
 const UrlPanel: React.FC<UrlPanelProps> = (props) => {
   return (
-    <div>
-      <h1>{props.route}</h1>
-      <h2>{props.originalUrl}</h2>
-      <h3>{props.description}</h3>
+    <div className="outerPanel">
+      <div className="panel">
+        <h1>/{props.route}</h1>
+        <h2>{props.originalUrl}</h2>
+        <h3>{props.description}</h3>
+      </div>
     </div>
   );
 }

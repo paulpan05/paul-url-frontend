@@ -1,0 +1,11 @@
+.panel {
+  background-color: lightgreen;
+  padding: 1em;
+  border-style: none;
+  border-radius: 1em;
+  color: darkgreen;
+}
+
+.outerPanel {
+  margin-bottom: 2em;
+}
