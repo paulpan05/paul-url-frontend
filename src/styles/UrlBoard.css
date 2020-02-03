@@ -1,7 +1,6 @@
 .title, .description {
   text-align: center;
   color: lightyellow;
-  overflow: hidden;
 }
 
 .board {
