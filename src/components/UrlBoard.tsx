@@ -15,16 +15,13 @@ const UrlBoard: React.FC = () => {
     const responseArray: GetResponse[] = await getAll();
     setAllUrls(responseArray);
   }
-  if (!allUrls) {
-    return <div></div>
-  } else {
-    console.log("Fetch success");
-    return <>
+  return (
+    <>
       {allUrls?.map((value, key) => {
         return <UrlPanel key={key} route={value.route} originalUrl={value.originalUrl} description={value.description} />;
       })}
     </>
-  }
+  );
 }
 
 export default UrlBoard;
