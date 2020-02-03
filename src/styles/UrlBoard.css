@@ -1,6 +1,10 @@
-.title, .description {
+.title, .description, .loadingText {
   text-align: center;
   color: lightyellow;
+}
+
+.loadingText {
+  margin-top: 4em;
 }
 
 .board {
