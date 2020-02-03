@@ -9,3 +9,7 @@
 .outerPanel {
   margin-bottom: 2em;
 }
+
+.route, .url, .url-description {
+  word-wrap: break-word;
+}
