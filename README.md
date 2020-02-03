@@ -1,3 +1,24 @@
+# Paul URL Front-end
+
+React application that shortens personal urls URL's. Can be redirected to the url by visiting https://paulurl.com/{route_name}
+
+## Implementation
+
+The following frameworks are used in the implementation
+ - React: for the entirety of the front-end
+   - React Router: For routing to the home page and redirecting to different user-defined routes
+ - Netlify: Continuous delivery and hosting platform for the website
+
+## Deployment
+
+The app is deployed using Netlify's GitHub integration, which automates deploy of the master branch.
+
+## Licence
+
+The license for this project is at [LICENSE](LICENSE)
+
+# React README
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
