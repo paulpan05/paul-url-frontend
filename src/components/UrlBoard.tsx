@@ -19,7 +19,7 @@ const UrlBoard: React.FC = () => {
   return (
     <div className="board">
       <h1 className="title">Paul's URL Shortener</h1>
-      <p className="description">You can visit each of these websites by going to paulurl.com/"Name of the route"</p>
+      <h2 className="description">You can visit each of these websites by going to <b>paulurl.com/<i>Name of the route</i></b></h2>
       {allUrls?.map((value, key) => {
         return <UrlPanel key={key} route={value.route} originalUrl={value.originalUrl} description={value.description} />;
       })}
