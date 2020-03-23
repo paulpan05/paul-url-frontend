@@ -1,13 +1,14 @@
 export type GetResponse = {
-  id: number
   route: string
   originalUrl: string
   description: string
 }
 
+const baseUrl = "https://tesa4s581f.execute-api.us-east-1.amazonaws.com/dev/"
+
 const getAll = async (): Promise<GetResponse[]> => {
   try {
-    const response: Response = await fetch('https://paul-url.herokuapp.com/v1/api')
+    const response: Response = await fetch(baseUrl)
     const result: GetResponse[] = await handleErrors(response);
     return result;
   } catch (error) {
@@ -15,13 +16,13 @@ const getAll = async (): Promise<GetResponse[]> => {
   }
 }
 
-const getRoute = async (routeName: string): Promise<GetResponse> => {
+const getRoute = async (routeName: string): Promise<GetResponse | null> => {
   try {
-    const response: Response = await fetch(`https://paul-url.herokuapp.com/v1/api/${routeName}`);
+    const response: Response = await fetch(`${baseUrl}${routeName}`);
     const result: GetResponse = await handleErrors(response);
     return result;
   } catch (error) {
-    return {id: -1, route: "", originalUrl: "", description: ""};
+    return null;
   }
 }
 
