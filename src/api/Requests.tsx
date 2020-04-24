@@ -4,7 +4,7 @@ export type GetResponse = {
   description: string
 }
 
-const baseUrl = "https://jyb7pm4rph.execute-api.us-east-1.amazonaws.com/prod"
+const baseUrl = "https://jyb7pm4rph.execute-api.us-east-1.amazonaws.com/prod/"
 
 const getAll = async (): Promise<GetResponse[]> => {
   try {
