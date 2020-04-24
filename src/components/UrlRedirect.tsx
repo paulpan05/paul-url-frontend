@@ -9,6 +9,7 @@ const UrlRedirect: React.FC = () => {
     if (!redirectResponse) {
       updateRedirectResponse();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   let { routeName } = useParams();
